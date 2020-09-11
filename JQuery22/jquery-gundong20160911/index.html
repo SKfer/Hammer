@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jquery�޷�����л�</title>
+<link rel="stylesheet" type="text/css" href="css/hdw.css"/>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+        var i=4;
+        var page=1;
+        var timer=null;
+        var jqWidth=$('.a5').width();
+        var page_last=Math.ceil($('.a6 ul li').length/i);
+
+        //�����л�
+        $('.next').click(function(){ 
+            rightMove()
+        });
+
+        //�����л�
+        $('.prev').click(function(){   
+            if(page==1){
+                $('.a6').animate({left:'-='+jqWidth*(page_last-1)},'1000');
+                page=page_last;
+            }else{
+                $('.a6').animate({left:'+='+jqWidth},'1000');
+                page--;
+            };
+            $('.a3 span').eq(page-1).addClass('one').siblings('span').removeClass('one');
+        });
+        
+         //�����Сͼ���ʱ���л�
+         $('.a3 span').click(function(){
+             $(this).addClass('one').siblings('span').removeClass('one');
+             $('.a6').animate({left:-jqWidth*($('.a3 span').index(this))+'px'},'1000');
+             page=$('.a3 span').index(this)+1;
+
+         })
+
+         //�����Զ��л�����
+         function move(){
+             timer=setInterval(function(){
+              rightMove();
+             },4000);
+         };
+         move();
+        
+        //�Զ��л������������ֹͣ
+        $('.a1').mouseover(function(){
+            clearInterval(timer);
+        });
+        //�Զ��л���������Ƴ���ʼ
+        $('.a1').mouseout(function(){
+            move();
+        });
+
+        //�����ƶ�����
+        function rightMove(){
+            if(page==page_last){
+                $('.a6').animate({left:'0px'},'1000')
+                page=1;
+            }else{
+                $('.a6').animate({left:'-='+jqWidth},'1000')
+                page++;
+            };
+            $('.a3 span').eq(page-1).addClass('one').siblings('span').removeClass('one');
+
+            };
+    });
+	
+
+
+</script>
+</head>
+
+<body>
+<div class="a1">
+  <div class="a2">
+    <h1>ͼƬչʾ</h1>
+    <div class="a3"> <span class="one">1</span> <span>2</span> <span>3</span> <span>4</span> </div>
+    <div class="a4"> <span class="prev">prev</span> <span class="next">next</span> </div>
+    <em><a href="javascript:void(0);">����>></a></em> </div>
+  <div class="a5">
+    <div class="a6">
+      <ul>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����q</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����w</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����e</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����r</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����t</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����y</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����u</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����i</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����o</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����p</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����a</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����s</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����d</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����f</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����g</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+        <li><a href="javascript:void(0);"><img src="img/01.jpg" alt="hdw" /></a>
+          <h1><a href="javascript:void(0);">����h</a></h1>
+          <span>ʱ��:<em>2011-9-26</em></span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

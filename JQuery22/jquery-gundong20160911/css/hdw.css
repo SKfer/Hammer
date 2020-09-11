@@ -1,0 +1,50 @@
+/* CSS Document */
+* { padding:0; margin:0;}
+
+body { font-size:12px; font-family:"ËÎÌו"; padding:100px;}
+
+ul { list-style-type:none;}
+
+a { color:#666; text-decoration:none;}
+
+a:hover { color:#000; text-decoration:underline;}
+
+img { border:none;}
+
+h1 { font-size:12px;}
+
+.a1 { width:595px;border:1px solid #e7e7e7;}
+
+.a2 { height:35px; background:#eee;}
+
+.a2 h1 { height:35px; line-height:35px; padding-left:10px; float:left;}
+
+.a3 { float:left; margin:14px 0 0 10px;}
+
+.a3 span { width:7px; height:7px; float:left;  background:url(../img/1.gif) no-repeat; text-indent:-9999px; margin:0 2px; }
+
+.a3 span.one { background:url(../img/2.gif) no-repeat; }
+
+.a4 { float:left; margin:7px 0 0 10px; }
+
+.a4 span { float:left; background:url(../img/3.gif) no-repeat; width:31px; height:22px; text-indent:-9999px;}
+
+.a4 span.next { background-position:-31px 0; }
+
+.a2 em { float:right; margin:10px 12px 0 0;}
+
+.a5 { width:592px; height:160px; overflow:hidden; position:relative;  border-top:none;}
+
+.a5 ul li { float:left; margin:10px 2px 0; padding:8px;}
+
+.a6 { width:2500px; position:absolute; top:0; left;0;}
+
+.a6 h1 { padding:5px 0 5px 0; }
+
+.a6 h1 a { color:#aaa; }
+
+
+
+
+
+
