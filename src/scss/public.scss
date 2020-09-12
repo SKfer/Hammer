@@ -8,21 +8,24 @@ img{display: block;}
 .r{float: right;}
 .container{width: 1220px; margin:0 auto; position: relative;}
 .container-fluid{ position: relative;}
-//编写头部
+body{
+    overflow: hidden;
+}
+/*编写头部*/
 #header{
     line-height: 45px;
     background: #232426;
     overflow: hidden;
     display: flex;
     //左侧log
-    .log_left{
+    .log-left{
       margin-top: 12px;
         margin-left: 20px;
         margin-bottom: 15px;
         margin-right: 405px;
     }
     // 中间头部导航
-    #nav{
+    #mid-div{
         align-content: center;
         font-size: 10px;
         a{
@@ -34,12 +37,165 @@ img{display: block;}
         }
     }
     //右侧login、cart
-    .rig_login{
+    .rig-login{
         position: absolute;
         right: 0;
         a{
             font-size: 14px;
             margin-right: 26px;
+        }
+    }
+}
+// 二维码
+.app{
+    position: fixed;
+    left: 1400px;
+    top: 45px;
+    background: white;
+    display: none;
+    z-index: 100007;
+    .bk-er{
+        width: 160px;
+        height: 180px;
+    }
+    .er{
+        position: absolute;
+        top: 23px;
+        left: 23px;
+        width: 112px;
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+        z-index: 100005;
+    }
+    p{
+        position: absolute;
+        bottom: 15px;
+        left: 25px;
+        font-size: 14px;
+        color: #4c4c4c;
+        z-index: 1000006;
+    }
+}
+// 导航栏
+#nav{
+    box-shadow: 0px 7px 10px -7px #5e5e5e4b;
+    // 导航栏标题
+    .nav-div{
+        line-height: 74px;
+        font-size: 13px;
+        a{
+            color: #4c4c4c;
+            margin-right: 30px;
+        }
+        .fat{
+            color: black;
+            font-weight: 900;
+        }
+        a:hover{
+            color: #3965cf;
+        }
+        //搜索框
+        .search{
+            position: absolute;
+            top: 17px;
+            left: 890px;
+            width: 330px;
+            line-height: 34px;
+            border: 1px solid #ebebeb;
+            border-radius: 20px;
+            z-index: 10001;
+            p{
+                color: #adadad;
+                font-size: 25px;
+                cursor:pointer;
+            }
+            .inp-ss{
+                height: 34px;
+                border: none;
+                outline: none;
+                text-indent: 5px;
+            }
+            .blue{
+                font-size: 11px;
+                width: 68px;
+                line-height: 18px;
+                position: absolute;
+                left: 172px;
+                top: 7px;
+                border: 1px solid #93b2f7;
+                border-radius: 20px;
+                background: #e5efff;
+                color: #3965cc;
+                text-align: center;
+                font-weight: 900;
+                cursor:pointer;
+            }
+            .green{
+                font-size: 11px;
+                width: 68px;
+                line-height: 18px;
+                position: absolute;
+                left: 250px;
+                top: 7px;
+                border: 1px solid #b6cc7b;
+                border-radius: 20px;
+                background: #f7fae1;
+                color: #8aad68;
+                text-align: center;
+                font-weight: 900;
+                cursor:pointer;
+            }
+        }
+    }
+    // 导航栏内容
+    .nav-content{
+        border-top: #5e5e5e4b 1px solid;
+        padding-top: 20px;
+        padding-bottom: 35px;
+        ul{
+            
+            li{
+                height: 176px;
+                margin: 0 auto;
+                width: 880px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .phone{
+                    display: none;
+                    .titel{
+                        color: #808080;
+                        font-size: 11px;
+                        margin-left: 8px;
+                    }
+                    a{
+                        display: flex;
+                        img{
+                            margin-top: 10px;
+                            align-content: center;
+                        }
+                        p{
+                            color: black;
+                            font-size: 12px;
+                            margin-top: 22px;
+                        }
+                    }
+                }
+                .official{
+                    text-align: center;
+                    img{
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: black;
+                    }
+                    p{
+                        color: #858585;
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 }
