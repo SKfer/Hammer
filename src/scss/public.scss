@@ -8,9 +8,6 @@ img{display: block;}
 .r{float: right;}
 .container{width: 1220px; margin:0 auto; position: relative;}
 .container-fluid{ position: relative;}
-body{
-    overflow: hidden;
-}
 /*编写头部*/
 #header{
     line-height: 45px;
@@ -106,8 +103,9 @@ body{
             z-index: 10001;
             p{
                 color: #adadad;
-                font-size: 25px;
+                font-size: 30px;
                 cursor:pointer;
+                margin-left: 5px;
             }
             .inp-ss{
                 height: 34px;
@@ -148,12 +146,16 @@ body{
         }
     }
     // 导航栏内容
-    .nav-content{
+    .nav-content{            
+        height: 240px;
         border-top: #5e5e5e4b 1px solid;
         padding-top: 20px;
         padding-bottom: 35px;
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        z-index: 1000006;
         ul{
-            height: 240px;
             li{
                 display: none;
                 margin: 0 auto;
@@ -256,6 +258,37 @@ body{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+            }
+            .li-service{
+                display: none;
+                margin: 0 auto;
+                width: 872px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-self: center;
+                a{
+                    display: block;
+                    width: 105px;
+                    height: 125px;
+                    border-radius: 20px;
+                    text-align: center;
+                    margin-top: 50px;
+                    img{
+                        width: 45px;
+                        margin-top: 25px;
+                        margin-left: 30px;
+                        margin-bottom: 13px;
+                    }
+                    span{
+                        font-size: 14px;
+                        color: black;
+                        font-weight: 900;
+                    }
+                }
+                a:hover{
+                    background: #f7f7f7;
+                }
             }
         }
     }

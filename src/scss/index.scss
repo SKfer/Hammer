@@ -1,4 +1,239 @@
 //初始代码，头部，尾部。
 @import 'public';
 
-
+// main
+#main{
+    padding-bottom: 25px;
+    padding-top: 26px;
+    background: #ededed;
+    // 轮播图
+    .carousel{
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
+        margin: 0 auto;
+        border: 1px solid #dbdbdb;
+        z-index: 100000;
+    }
+    .slider-main-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 25px;
+    }
+    .slider-ctrl {
+        position: absolute;
+        bottom: 5px;                        /*圆圈位置*/
+        left: 50%;
+        transform: translate(-50%);
+        .slider-ctrl-con-active {
+            background-color: #fff;             /*圆圈变更颜色*/
+            opacity: 1;
+        }
+    }
+    .slider-ctrl-con{
+        display: inline-block;
+        width: 8px;                        /*圆圈大小*/
+        height: 8px;
+        border-radius: 50%;
+        background-color: black;              /*圆圈开始颜色*/
+        margin-right: 10px;                 /*圆圈间距*/
+        cursor: pointer;                    /*圆圈手势*/
+        opacity: .3;
+    }
+    // 四个服务
+    .horizon{
+        border: 1px solid #dbdbdb;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                position: relative;
+                img{
+                    width: 300px;
+                }
+                .img1{
+                    width: 100%;
+                    height: 100%;
+                }
+                .div1{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 310px;
+                    height: 197px;
+                    transition: all linear .3s;
+                }
+                .div2,.div3,.div4{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 300px;
+                    height: 197px;
+                    transition: all linear .3s;
+                }
+            }
+            .a1:hover .div1{
+                box-shadow: 0 0 30px #bcbcbc inset;
+                transition: all linear .3s;
+            }
+            .a2:hover .div2{
+                box-shadow: 0 0 30px #bcbcbc inset;
+                transition: all linear .3s;
+            }
+            .a3:hover .div3{
+                box-shadow: 0 0 30px #bcbcbc inset;
+                transition: all linear .3s;
+            }
+            .a4:hover .div4{
+                box-shadow: 0 0 30px #bcbcbc inset;
+                transition: all linear .3s;
+            }
+        }
+        .li1{
+           width: 310px;
+           height: 197px;
+        }
+    }
+    .rotation{
+        border-radius: 10px;
+        overflow: hidden;
+        .rotation-header{
+            overflow: hidden;
+            background: #fafafa;
+            line-height: 60px;
+            h4{
+                float: left;
+                color: #666666;
+                margin-left: 22px;
+            }
+            .direction{
+                margin-top: 18px;
+                width: 22px;
+                height: 22px;
+                border: 1px solid #9e9e9e;
+                border-radius: 50%;
+                float: right;
+                text-align: center;
+                line-height: 22px;
+                color: #7f7f7f;
+                font-weight: 900;
+                cursor:pointer;
+                margin-right: 22px;
+            }
+        }
+        ul{
+            overflow: hidden;
+            li{
+                border: 1px solid #66666638;
+                height: 428px;
+                transition: all linear .3s;
+                padding-bottom: 30px;
+                float: left;
+                position: relative;
+                width: 303px;
+                text-align: center;
+                background: white;
+                padding-top: 35px;
+                a{
+                    .img-div{
+                        width: 216px;
+                        height: 216px;
+                        position: relative;
+                        margin-left: 44px;
+                        margin-bottom: 30px;
+                        img{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                        .img2{
+                            display: none;
+                        }
+                    }
+                    .sp1{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: black;
+                        font-weight: 900;
+                        margin-bottom: 14px;
+                    }
+                    .limit{
+                        margin-bottom: 14px;
+                        .preferential{
+                            font-size: 12px;
+                            color: red;
+                            display: none;
+                        }
+                        .sp2{
+                            // display: inline-block;
+                            font-size: 12px;
+                            color: #999999;
+                            // display: none;
+                        }
+                    }
+                    .color{
+                        width: 38px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 auto;
+                        .big{
+                            margin: 0 auto;
+                            width: 12px;
+                            height: 12px;
+                            background-color: white;
+                            border: 3px solid #e6e6e650;
+                            border-radius: 50%;
+                            .small{
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                margin: auto;
+                            }
+                            .small1{
+                                background: white;
+                            }
+                            .small2{
+                                margin-top: 2px;
+                                background: green;
+                            }
+                        }
+                        .big1:hover{
+                            border: 3px solid #b4b4b4;
+                        }
+                        .big2:hover{
+                            border: 3px solid #b4b4b4;
+                        }
+                    }
+                    p{
+                        margin-top: 22px;
+                        span{
+                            font-size: 14px;
+                            color: #d44d44;
+                            font-weight: 900;
+                        }
+                        s{
+                            font-size: 10px;
+                            color: #cccccc;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+            li:hover{
+                box-shadow: 0 0 30px #bcbcbc inset;
+                transition: all linear .3s;
+            }
+            li:hover a .limit .sp2{
+                display: none;
+            }
+            li:hover a .limit .preferential{
+                display: block;
+            }
+        }
+    }
+}

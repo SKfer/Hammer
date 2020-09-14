@@ -52,7 +52,7 @@
             <a href="#">家具生活</a>
             <a href="#">美妆个护</a>
             <a href="#">抖音文创</a>
-            <a href="#">服务</a>
+            <a href="#" class="service">服务</a>
             <div class="search r">
                 <p class="iconfont iconss l"></p>
                 <input type="text" class="inp-ss l">
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="nav-content content">
-            <ul class="container">
+            <ul class="container nav-content-ul">
                 <!-- 首页内容 -->
                 <li>
                     <div class="phone">
@@ -611,69 +611,159 @@
                         <p><span>￥199.00</span>起</p>
                     </a>
                 </li>
+                <!-- 服务 -->
+                <li class="li-service">
+                    <a href="#">
+                        <img src="../images/index_images/baoxiu.png" alt="">
+                        <span>保修服务</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/index_images/zaixiankefu.png" alt="">
+                        <span>在线客服</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/index_images/fuwuzhengce.png" alt="">
+                        <span>服务政策</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/index_images/faqishouhou.png" alt="">
+                        <span>发起售后</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/index_images/weixiumendian.png" alt="">
+                        <span>维修门店</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/index_images/zizhufuwu.png" alt="">
+                        <span>自助服务</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/index_images/yijiu.png" alt="">
+                        <span>以旧换新</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
+    <!-- main -->
+    <main id="main" class="container-fluid">
+        <!-- 轮播图 -->
+        <div class="carousel container" id="carousel">
 
-
+        </div>
+        <!-- 四个服务 -->
+        <ul class="container horizon">
+            <li class="li1">
+               <a href="#" class="a1">
+                   <img src="../images/index_images/jianguoxinpin.jpg" alt="" class="img1">
+                   <div class="div1"></div>
+               </a> 
+            </li>
+            <li>
+                <a href="#" class="a2">
+                    <img src="../images/index_images/yijiuhuanxin.png" alt="">
+                    <div class="div2"></div>
+                </a> 
+            </li>
+            <li>
+                <a href="#" class="a3">
+                    <img src="../images/index_images/dipingxian.jpg" alt="">
+                    <div class="div3"></div>
+                </a> 
+            </li>
+            <li>
+                <a href="#" class="a4">
+                    <img src="../images/index_images/jingxuanhaowu.jpg" alt="">
+                    <div class="div4"></div>
+                </a>
+            </li>
+        </ul>
+        <!-- 小轮播 -->
+        <div class="rotation container">
+            <div class="rotation-header">
+                <h4>热门商品</h4>
+                <p class="p2 direction">></p>
+                <p class="p1 direction"><</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="img-div">
+                            <img src="../images/index_images/TWSlanyaerji.png" alt="" class="img1">
+                            <img src="../images/index_images/TWSlanyaerjigreen.png" alt="" class="img2">
+                        </div>
+                        <span class="sp1">Smartisan 真无线TWS蓝牙耳机</span>
+                        <div class="limit">
+                            <span class="preferential">
+                                官方自营配件 限时特惠
+                            </span>
+                            <span class="sp2">智能配对 开盖即连</span>
+                        </div>
+                        <div class="color">
+                            <div class="big big1"><div class="small small1"></div></div>
+                            <div class="big big2"><div class="small small2"></div></div>
+                        </div>
+                        <p>
+                            <span>￥199.00</span>
+                            <s>￥249.00</s> 
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img-div">
+                            <img src="../images/index_images/TWSlanyaerji.png" alt="" class="img1">
+                            <img src="../images/index_images/TWSlanyaerjigreen.png" alt="" class="img2">
+                        </div>
+                        <span class="sp1">Smartisan 真无线TWS蓝牙耳机</span>
+                        <div class="limit">
+                            <span class="preferential">
+                                官方自营配件 限时特惠
+                            </span>
+                            <span class="sp2">智能配对 开盖即连</span>
+                        </div>
+                        <div class="color">
+                            <div class="big big1"><div class="small small1"></div></div>
+                            <div class="big big2"><div class="small small2"></div></div>
+                        </div>
+                        <p>
+                            <span>￥199.00</span>
+                            <s>￥249.00</s> 
+                        </p>
+                    </a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+    <script src="../js/index.min.js"></script>
+    <script src="../js/carousel-v0.7移动端bug修复.js"></script>
     <script>
-        // 下载APP移入事件
-        $('document').ready(function(){
-            $('.down-APP').on('mouseenter',function(){
-                $('.app').css('display','block')
-            });
-            $('.down-APP').on('mouseout',function(){
-                $('.app').css('display','none')
-            });
-        })
-        // 导航栏点击
-        $(".nav-div a").on("click",function(){
-            $(".nav-div a").removeClass("fat");
-            $(this).addClass("fat");	
-        })
-        //搜索框添加事件
-        $('document').ready(function(){
-            $('.inp-ss').on('focus',function(){
-                $('.blue').css('display','none');
-                $('.green').css('display','none');
-                $('.inp-ss').attr('placeholder','请输入搜索的商品')
-            });
-            $('.inp-ss').on('blur',function(){
-                $('.blue').css('display','block');
-                $('.green').css('display','block');
-                $('.inp-ss').attr('placeholder','')
-            })
-        })
-        //导航栏内容切换
-        $(function(){
-        $(".tabbox .tab a").mouseover(function(){
-            $(this).addClass('on').siblings().removeClass('on');
-            var index = $(this).index();
-            number = index;
-            $('.tabbox .content li').hide();
-            $('.tabbox .content li:eq('+index+')').show();
-        });
-        
-        var auto = 1;  //等于1则自动切换，其他任意数字则不自动切换
-        if(auto ==1){
-            var number = 0;
-            var maxNumber = $('.tabbox .tab a').length;
-            function autotab(){
-                number++;
-                number == maxNumber? number = 0 : number;
-                $('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
-                $('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
-            }
-            // var tabChange = setInterval(autotab,3000);
-            //鼠标悬停暂停切换
-            // $('.tabbox').mouseover(function(){
-            //     clearInterval(tabChange);
-            // });
-            // $('.tabbox').mouseout(function(){
-            //     tabChange = setInterval(autotab,3000);
-            // });
+        var opts = {
+            index:0,                               //开始显示的图片索引值
+            carousleTime:3000,                     //轮播图速度（ms）                         //图片的宽度
+            parentDom:".carousel",                 //必传参数 父容器
+
+        //            data:[                                 //必传参数 图片数据
+        //                {href:"#",img:"images/lb1.jpg"},
+        //                {href:"#",img:"images/lb2.jpg"},
+        //                {href:"#",img:"images/lb3.jpg"},
+        //            ],
+
+            data:[                                 //必传参数 图片数据
+                {href:"#",img:"../images/index_images/banner1.jpg"},
+                {href:"#",img:"../images/index_images/banner2.jpg"},
+                {href:"#",img:"../images/index_images/banner3.jpg"},
+                {href:"#",img:"../images/index_images/banner4.jpg"},
+                {href:"#",img:"../images/index_images/banner5.jpg"},
+            ]
         }
-    });
+        var carousel = new Carousel(opts);
     </script>
 </body>
 </html>
