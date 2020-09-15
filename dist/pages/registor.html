@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery.cookie.min.js"></script>
+    <script src="../js/index.min.js"></script>
+    <script src="../js/registor.min.js"></script>
+    <link rel="stylesheet" href="../css/registor.min.css">
+    <style>
+        baby,html{
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/register/background.jpg);
+        }
+        .user-p{
+            background: url(../images/register/user-password.png) no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- main -->
+    <main id="main" class="container-fluid">
+        <!-- 注册框 -->
+        <div class="Login-box">
+            <img src="../images/register/red-login.png" alt="" class="red-login">
+            <p class="word">使用 Smartisan ID 注册官网</p>
+            <!-- 用户名 -->
+            <div class="user-div">
+                <p class="user-p"></p><input type="text" class="user" placeholder="请输入手机号/邮箱">
+                <p class="err">手机号/邮箱格式错误</p>
+            </div>
+            <!-- 密码 -->
+            <div class="password-div user-div">
+                <p class="pass-p user-p"></p><input type="password" class="upwd user" placeholder="请输入密码">
+                <p class="err">手机号/邮箱格式错误</p>
+            </div>
+            <!-- 注册按钮 -->
+            <div class="registor">注册</div>
+            <!-- 去登陆 -->
+            <a href="#" class="log-a">已有账号？去登陆 ></a>
+        </div>
+    </main>
+</body>
+</html>
