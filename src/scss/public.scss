@@ -154,10 +154,8 @@ img{display: block;}
         // position: absolute;
         // left: 0;
         // top: 0;
-        z-index: 1000006;
         ul{
             li{
-                display: none;
                 margin: 0 auto;
                 width: 880px;
                 display: flex;
@@ -289,6 +287,94 @@ img{display: block;}
                 a:hover{
                     background: #f7f7f7;
                 }
+            }
+        }
+    }
+}
+
+
+// footer
+#footer{
+    background: #fafafa;
+    padding-top: 60px;
+    border-top: 1px solid #e6e6e6;
+    padding-bottom: 36px;
+    .top-div{
+        padding-bottom: 56px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e6e6e6;
+        .left-div{
+            width: 324px;
+            display: flex;
+            justify-content: space-between;
+            .order{
+                h4{
+                    font-size: 10px;
+                    color: #646464;
+                    margin-bottom: 28px;
+                }
+                a{
+                    margin-top: 14px;
+                    display: block;
+                    font-size: 10px;
+                    color: #969696;
+                    transition: all linear .1s;
+                }
+                a:hover{
+                    color: #3965cf;
+                    transition: all linear .1s;
+                }
+            }
+        }
+        .right-div{
+            span{
+                font-size: 16px;
+                color: #5079d9;
+                font-weight: 900;
+                display: block;
+                margin-bottom: 18px;
+            }
+            p{
+                color: #999999;
+                font-size: 10px;
+                text-align: right;
+            }
+            a{
+                margin-top: 14px;
+                display: block;
+                width: 130px;
+                height: 30px;
+                border: 1px solid #d1d1d1;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 10px;
+                color: #3965cf;
+                font-weight: 900;
+                .iconfont{
+                    display: inline;
+                    margin-right: 5px;
+                }
+            }
+            a:hover{
+                background: #6464640c;
+            }
+        }
+    }
+    .bottom-div{
+        margin-top: 30px;
+        p{
+            font-size: 10px;
+            color: #bdbdbd;
+            margin-bottom: 8px;
+            a{
+                margin: 0 8px;
+                transition: all linear .1s;
+            }
+            a:hover{
+                color: #3965cf;
+                transition: all linear .1s;
             }
         }
     }

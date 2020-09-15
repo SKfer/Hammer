@@ -48,7 +48,7 @@ $(function(){
     }
 });
 // 导航栏伸缩
-$(document).ready(function(e) {
+$(document).ready(function(e){
     $('.nav-content').hide();
     $(".nav-div>a").mouseenter(function(){
         $(".nav-content").stop();
@@ -59,17 +59,8 @@ $(document).ready(function(e) {
         $(".nav-content").toggle(1000);
     })
 });
-
-
-
 //------------------------------------------------
 // 小轮播图js
-$('color big1').mouseenter(function(){
-    $('.img-div .img1').css('display','block');
-    $('.img-div .img2').css('display','none');
-})
-$('color big2').mouseenter(function(){
-    $('.img-div .img2').css('display','block');
-    $('.img-div .img1').css('display','none');
-})
+
+
 
