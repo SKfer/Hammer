@@ -1,0 +1,25 @@
+[
+    {
+        "id" : "101",
+        "img" : "good-1",
+        "pirce" : "￥2,899.00",
+        "good_name" : "坚果 PRO 3",
+        "introduce" :"高通骁龙™ 855Plus · 4800 万模范四摄 · Smartisan OS 7.0 ","color" : "黑色"
+    },
+    {
+        "id" : "102",
+        "img" : "good-2",
+        "pirce" : "￥1,998.00",
+        "good_name" : "坚果 Pro 2S",
+        "introduce" :"双系统，无限屏 ",
+        "color" : "炫蓝色"
+    },
+    {
+        "id" : "103",
+        "img" : "good-3",
+        "pirce" : "￥3,799.00",
+        "good_name" : "坚果 R1",
+        "introduce" :"次世代旗舰手机，内藏来自未来的“电脑” ",
+        "color" : "蓝色"
+    }
+]

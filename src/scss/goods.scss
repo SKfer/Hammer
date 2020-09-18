@@ -1,0 +1,88 @@
+@import 'public';
+
+
+// main
+#main{
+    padding-top: 48px;
+    background-color: #fcfcfc;
+    .good-content{
+        display: flex;
+        justify-content: space-between;
+        .good-right{
+            width: 610px;
+            h3{
+                font-size: 30px;
+                font-weight: normal;
+            }
+            .synopsis{
+                padding-bottom: 37px;
+                width: 610px;
+                border-bottom: 1px solid #e8e8e8;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-size: 12px;
+                color: #999999;
+            }
+            .good-color{
+                display: flex;
+                justify-content: left;
+                font-size: 14px;
+                color: #0f1d37;
+                line-height: 30px;
+                padding-bottom: 32px;
+                p{
+                    font-size: 12px;
+                    color: #666666;
+                }
+                .big{
+                    width: 30px;
+                    height: 30px;
+                    border: 3px solid #9a9a9a;
+                    border-radius: 50%;
+                    margin-left: 30px;
+                    margin-right: 10px;
+                    .small{
+                        width: 26px;
+                        height: 26px;
+                        background: #0f1d37;
+                        border-radius: 50%;
+                        margin: 2px auto 0;
+                    }
+                }
+            }
+            .good-capacity{
+                display: flex;
+                justify-content: left;
+                border-bottom: 1px solid #e8e8e8;
+                padding-bottom: 37px;
+                margin-top: 32px;
+                margin-bottom: 37px;
+                .p1{
+                    font-size: 12px;
+                    color: #666666;
+                    line-height: 47px;
+                }
+                .p2{
+                    width: 130px;
+                    height: 47px;
+                    line-height: 47px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 900;
+                    border: 1px solid #6a8fe6;
+                    border-radius: 10px;
+                    margin-left: 30px;
+                }
+            }
+            .explain{
+                font-size: 12px;
+                color: #666666;
+                span{
+                    font-size: 10px;
+                    color: #999999;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
